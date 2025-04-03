@@ -62,15 +62,15 @@ struct TodayAndTomorrowWidgetView: View {
             HStack(spacing: 12) {
                 VStack(spacing: 8) {
                     Text("今天限行")
-                       .font(.system(size: 22, weight:.bold, design:.rounded))
+                       .font(.system(size: 20, weight:.bold, design:.rounded))
                        .foregroundColor(.white)
                        .shadow(color:.white.opacity(0.5), radius: 2, x: 0, y: 1)
                     Text(entry.todayRestriction)
-                       .font(.system(size: 40, weight:.bold, design:.rounded))
+                       .font(.system(size: 36, weight:.bold, design:.rounded))
                        .foregroundColor(.white)
                        .shadow(color:.white.opacity(0.5), radius: 3, x: 0, y: 1)
                 }
-               .padding(16)
+               .padding(14)
                .frame(maxWidth:.infinity)
                .background(
                     LinearGradient(
@@ -84,15 +84,15 @@ struct TodayAndTomorrowWidgetView: View {
                     
                 VStack(spacing: 8) {
                     Text("明天限行")
-                       .font(.system(size: 22, weight:.bold, design:.rounded))
+                       .font(.system(size: 20, weight:.bold, design:.rounded))
                        .foregroundColor(.white)
                        .shadow(color:.white.opacity(0.5), radius: 2, x: 0, y: 1)
                     Text(entry.tomorrowRestriction)
-                       .font(.system(size: 40, weight:.bold, design:.rounded))
+                       .font(.system(size: 36, weight:.bold, design:.rounded))
                        .foregroundColor(.white)
                        .shadow(color:.white.opacity(0.5), radius: 3, x: 0, y: 1)
                 }
-               .padding(16)
+               .padding(14)
                .frame(maxWidth:.infinity)
                .background(
                     LinearGradient(
