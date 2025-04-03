@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		537878882D9D1578001601EE /* carrestrictionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537878872D9D1578001601EE /* carrestrictionApp.swift */; };
 		5378788A2D9D1578001601EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537878892D9D1578001601EE /* ContentView.swift */; };
-		5378788C2D9D1578001601EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5378788B2D9D1578001601EE /* Item.swift */; };
 		5378788E2D9D1579001601EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5378788D2D9D1579001601EE /* Assets.xcassets */; };
 		537878912D9D1579001601EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537878902D9D1579001601EE /* Preview Assets.xcassets */; };
 		5378789B2D9D157A001601EE /* carrestrictionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5378789A2D9D157A001601EE /* carrestrictionTests.swift */; };
 		537878A52D9D157A001601EE /* carrestrictionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537878A42D9D157A001601EE /* carrestrictionUITests.swift */; };
 		537878A72D9D157A001601EE /* carrestrictionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537878A62D9D157A001601EE /* carrestrictionUITestsLaunchTests.swift */; };
+		53EE2E282D9D444A009C99D3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE2E272D9D444A009C99D3 /* WidgetKit.framework */; };
+		53EE2E2A2D9D444A009C99D3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE2E292D9D444A009C99D3 /* SwiftUI.framework */; };
+		53EE2E2D2D9D444A009C99D3 /* TodayWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE2E2C2D9D444A009C99D3 /* TodayWidgetBundle.swift */; };
+		53EE2E2F2D9D444A009C99D3 /* TodayWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE2E2E2D9D444A009C99D3 /* TodayWidgetLiveActivity.swift */; };
+		53EE2E312D9D444A009C99D3 /* TodayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE2E302D9D444A009C99D3 /* TodayWidget.swift */; };
+		53EE2E332D9D444A009C99D3 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EE2E322D9D444A009C99D3 /* AppIntent.swift */; };
+		53EE2E352D9D444C009C99D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EE2E342D9D444C009C99D3 /* Assets.xcassets */; };
+		53EE2E392D9D444C009C99D3 /* TodayWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 53EE2E252D9D444A009C99D3 /* TodayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		53EE2E462D9D597B009C99D3 /* TrafficRestrictionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 53EE2E452D9D597B009C99D3 /* TrafficRestrictionKit */; };
+		53EE2E482D9D5987009C99D3 /* TrafficRestrictionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 53EE2E472D9D5987009C99D3 /* TrafficRestrictionKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +41,33 @@
 			remoteGlobalIDString = 537878832D9D1578001601EE;
 			remoteInfo = carrestriction;
 		};
+		53EE2E372D9D444C009C99D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5378787C2D9D1578001601EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53EE2E242D9D444A009C99D3;
+			remoteInfo = TodayWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		53EE2E3D2D9D444C009C99D3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				53EE2E392D9D444C009C99D3 /* TodayWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		537878842D9D1578001601EE /* carrestriction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carrestriction.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		537878842D9D1578001601EE /* CarTR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537878872D9D1578001601EE /* carrestrictionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrestrictionApp.swift; sourceTree = "<group>"; };
 		537878892D9D1578001601EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5378788B2D9D1578001601EE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5378788D2D9D1579001601EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		537878902D9D1579001601EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		537878962D9D157A001601EE /* carrestrictionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carrestrictionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +75,15 @@
 		537878A02D9D157A001601EE /* carrestrictionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carrestrictionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		537878A42D9D157A001601EE /* carrestrictionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrestrictionUITests.swift; sourceTree = "<group>"; };
 		537878A62D9D157A001601EE /* carrestrictionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrestrictionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53EE2E252D9D444A009C99D3 /* TodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		53EE2E272D9D444A009C99D3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		53EE2E292D9D444A009C99D3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		53EE2E2C2D9D444A009C99D3 /* TodayWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetBundle.swift; sourceTree = "<group>"; };
+		53EE2E2E2D9D444A009C99D3 /* TodayWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		53EE2E302D9D444A009C99D3 /* TodayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidget.swift; sourceTree = "<group>"; };
+		53EE2E322D9D444A009C99D3 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		53EE2E342D9D444C009C99D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53EE2E362D9D444C009C99D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EE2E462D9D597B009C99D3 /* TrafficRestrictionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +109,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53EE2E222D9D444A009C99D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53EE2E482D9D5987009C99D3 /* TrafficRestrictionKit in Frameworks */,
+				53EE2E2A2D9D444A009C99D3 /* SwiftUI.framework in Frameworks */,
+				53EE2E282D9D444A009C99D3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +128,8 @@
 				537878862D9D1578001601EE /* carrestriction */,
 				537878992D9D157A001601EE /* carrestrictionTests */,
 				537878A32D9D157A001601EE /* carrestrictionUITests */,
+				53EE2E2B2D9D444A009C99D3 /* TodayWidget */,
+				53EE2E262D9D444A009C99D3 /* Frameworks */,
 				537878852D9D1578001601EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,9 +137,10 @@
 		537878852D9D1578001601EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				537878842D9D1578001601EE /* carrestriction.app */,
+				537878842D9D1578001601EE /* CarTR.app */,
 				537878962D9D157A001601EE /* carrestrictionTests.xctest */,
 				537878A02D9D157A001601EE /* carrestrictionUITests.xctest */,
+				53EE2E252D9D444A009C99D3 /* TodayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +150,6 @@
 			children = (
 				537878872D9D1578001601EE /* carrestrictionApp.swift */,
 				537878892D9D1578001601EE /* ContentView.swift */,
-				5378788B2D9D1578001601EE /* Item.swift */,
 				5378788D2D9D1579001601EE /* Assets.xcassets */,
 				5378788F2D9D1579001601EE /* Preview Content */,
 			);
@@ -130,6 +181,28 @@
 			path = carrestrictionUITests;
 			sourceTree = "<group>";
 		};
+		53EE2E262D9D444A009C99D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53EE2E272D9D444A009C99D3 /* WidgetKit.framework */,
+				53EE2E292D9D444A009C99D3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53EE2E2B2D9D444A009C99D3 /* TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				53EE2E2C2D9D444A009C99D3 /* TodayWidgetBundle.swift */,
+				53EE2E2E2D9D444A009C99D3 /* TodayWidgetLiveActivity.swift */,
+				53EE2E302D9D444A009C99D3 /* TodayWidget.swift */,
+				53EE2E322D9D444A009C99D3 /* AppIntent.swift */,
+				53EE2E342D9D444C009C99D3 /* Assets.xcassets */,
+				53EE2E362D9D444C009C99D3 /* Info.plist */,
+			);
+			path = TodayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,14 +213,19 @@
 				537878802D9D1578001601EE /* Sources */,
 				537878812D9D1578001601EE /* Frameworks */,
 				537878822D9D1578001601EE /* Resources */,
+				53EE2E3D2D9D444C009C99D3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				53EE2E382D9D444C009C99D3 /* PBXTargetDependency */,
 			);
 			name = carrestriction;
+			packageProductDependencies = (
+				53EE2E452D9D597B009C99D3 /* TrafficRestrictionKit */,
+			);
 			productName = carrestriction;
-			productReference = 537878842D9D1578001601EE /* carrestriction.app */;
+			productReference = 537878842D9D1578001601EE /* CarTR.app */;
 			productType = "com.apple.product-type.application";
 		};
 		537878952D9D157A001601EE /* carrestrictionTests */ = {
@@ -186,6 +264,26 @@
 			productReference = 537878A02D9D157A001601EE /* carrestrictionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		53EE2E242D9D444A009C99D3 /* TodayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53EE2E3A2D9D444C009C99D3 /* Build configuration list for PBXNativeTarget "TodayWidgetExtension" */;
+			buildPhases = (
+				53EE2E212D9D444A009C99D3 /* Sources */,
+				53EE2E222D9D444A009C99D3 /* Frameworks */,
+				53EE2E232D9D444A009C99D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWidgetExtension;
+			packageProductDependencies = (
+				53EE2E472D9D5987009C99D3 /* TrafficRestrictionKit */,
+			);
+			productName = TodayWidgetExtension;
+			productReference = 53EE2E252D9D444A009C99D3 /* TodayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +305,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 537878832D9D1578001601EE;
 					};
+					53EE2E242D9D444A009C99D3 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 5378787F2D9D1578001601EE /* Build configuration list for PBXProject "carrestriction" */;
@@ -216,8 +317,12 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 5378787B2D9D1578001601EE;
+			packageReferences = (
+				53EE2E442D9D597B009C99D3 /* XCLocalSwiftPackageReference "../TrafficRestrictionKit" */,
+			);
 			productRefGroup = 537878852D9D1578001601EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,6 +330,7 @@
 				537878832D9D1578001601EE /* carrestriction */,
 				537878952D9D157A001601EE /* carrestrictionTests */,
 				5378789F2D9D157A001601EE /* carrestrictionUITests */,
+				53EE2E242D9D444A009C99D3 /* TodayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +359,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53EE2E232D9D444A009C99D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53EE2E352D9D444C009C99D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,7 +375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5378788A2D9D1578001601EE /* ContentView.swift in Sources */,
-				5378788C2D9D1578001601EE /* Item.swift in Sources */,
 				537878882D9D1578001601EE /* carrestrictionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +396,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		53EE2E212D9D444A009C99D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53EE2E2F2D9D444A009C99D3 /* TodayWidgetLiveActivity.swift in Sources */,
+				53EE2E332D9D444A009C99D3 /* AppIntent.swift in Sources */,
+				53EE2E312D9D444A009C99D3 /* TodayWidget.swift in Sources */,
+				53EE2E2D2D9D444A009C99D3 /* TodayWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +419,11 @@
 			isa = PBXTargetDependency;
 			target = 537878832D9D1578001601EE /* carrestriction */;
 			targetProxy = 537878A12D9D157A001601EE /* PBXContainerItemProxy */;
+		};
+		53EE2E382D9D444C009C99D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53EE2E242D9D444A009C99D3 /* TodayWidgetExtension */;
+			targetProxy = 53EE2E372D9D444C009C99D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -421,6 +550,7 @@
 		537878AB2D9D157A001601EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,17 +569,18 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.w.carrestriction;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwxz.carrestriction;
+				PRODUCT_NAME = CarTR;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		537878AC2D9D157A001601EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,11 +599,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.w.carrestriction;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwxz.carrestriction;
+				PRODUCT_NAME = CarTR;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -552,6 +683,60 @@
 			};
 			name = Release;
 		};
+		53EE2E3B2D9D444C009C99D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 248BK4W379;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwxz.carrestriction.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53EE2E3C2D9D444C009C99D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 248BK4W379;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xwxz.carrestriction.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -562,7 +747,7 @@
 				537878A92D9D157A001601EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		537878AA2D9D157A001601EE /* Build configuration list for PBXNativeTarget "carrestriction" */ = {
 			isa = XCConfigurationList;
@@ -571,7 +756,7 @@
 				537878AC2D9D157A001601EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		537878AD2D9D157A001601EE /* Build configuration list for PBXNativeTarget "carrestrictionTests" */ = {
 			isa = XCConfigurationList;
@@ -580,7 +765,7 @@
 				537878AF2D9D157A001601EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		537878B02D9D157A001601EE /* Build configuration list for PBXNativeTarget "carrestrictionUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,9 +774,36 @@
 				537878B22D9D157A001601EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
+		};
+		53EE2E3A2D9D444C009C99D3 /* Build configuration list for PBXNativeTarget "TodayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53EE2E3B2D9D444C009C99D3 /* Debug */,
+				53EE2E3C2D9D444C009C99D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		53EE2E442D9D597B009C99D3 /* XCLocalSwiftPackageReference "../TrafficRestrictionKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../TrafficRestrictionKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53EE2E452D9D597B009C99D3 /* TrafficRestrictionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TrafficRestrictionKit;
+		};
+		53EE2E472D9D5987009C99D3 /* TrafficRestrictionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TrafficRestrictionKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5378787C2D9D1578001601EE /* Project object */;
 }
