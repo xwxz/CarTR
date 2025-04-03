@@ -23,7 +23,7 @@ class ContentView: ObservableObject {
         DispatchQueue.global().async {
             DispatchQueue.main.async {
                 self.todayRestriction = manager.getCurrentDateRestriction(currentDate : Date())
-                let tomorrowDate = Calendar.current.date(byAdding:.day, value: 2, to: Date())!
+                let tomorrowDate = Calendar.current.date(byAdding:.day, value: 1, to: Date())!
                 self.weekRestrictions = manager.getNextWeekRestrictions(currentDate: tomorrowDate)
             }
         }
@@ -63,6 +63,13 @@ struct ContentViewWrapper: View {
             
             ScrollView {
                 VStack(spacing: 20) {
+                    // 标题
+                    Text("北京小汽车尾号限行")
+                       .font(.custom("Comic Sans MS", size: 24))
+                       .foregroundColor(.white)
+                       .shadow(color:.black.opacity(0.5), radius: 3, x: 1, y: 1)
+                       .padding(.bottom, 10)
+                    
                     // 今日、昨日、明日限行信息布局
                     HStack {
                         // 昨日限行
